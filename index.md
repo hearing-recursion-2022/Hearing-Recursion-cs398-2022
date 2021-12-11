@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+# The Auditory Recursive Experiment 
 
-You can use the [editor on GitHub](https://github.com/haywortha/398-Website/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Vision
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+What we are trying to do is make it so students can observe what a recursive function is doing by using audio. We will be making programs that play audio tones within recursive functions so students can tell what is happening while it is running. Recursion can be tough for certain people, so we are aiming to make it easier to understand, and to make it more interesting. 
 
-### Markdown
+## Team
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Hayworth Anderson is the only one working on this experiment, a senior in Computer Science at Calvin University. He is being mentored by Professor Joel Adams of the Computer Science department.  
 
+## Code
+
+Types of recursion being used are as follows:
+
+- binary search
+- factorial
+- linear search
+- hanoi towers
+
+Some example code so you can see generally how it works
 ```markdown
-Syntax highlighted code block
+long long factorial(int n, ThreadSynth& synth) {
+    const int DURATION = 1;
+    long long answer = 0;
 
-# Header 1
-## Header 2
-### Header 3
+    // Use a Note Scale to choose different notes as the recursion happens
+    MidiNote note = Util::scaleToNote(n, std::make_pair(0, 30), std::make_pair(C4, C7));
 
-- Bulleted
-- List
+    if (n > 1) {
+      synth.play(note, Timing::SECOND, DURATION);
+      // Recursive call
+      answer = n * factorial(n - 1, synth);
+      synth.play(note, Timing::SECOND, DURATION);
+    } else {
+      synth.play(note, Timing::SECOND, DURATION);
+      // Wait for 2 seconds at the bottom to show you have reached the base case
+      synth.stop(Timing::SECOND, DURATION*2);
+      answer = 1;
+    }
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    return answer;
+}
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Report
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/haywortha/398-Website/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Right now, most of the code is written for the experiment, however some small adjustments need to be made. The experiment is scheduled to comence in the spring semester of 2022. We are hoping to gather a decent group of students to run a control group and a group using these auditory programs. 
