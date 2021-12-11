@@ -19,6 +19,8 @@ Types of recursion being used are as follows:
 
 Some example code so you can see generally how it works
 ```markdown
+#include <tsal.hpp>
+
 long long factorial(int n, ThreadSynth& synth) {
     const int DURATION = 1;
     long long answer = 0;
