@@ -41,7 +41,37 @@ long long factorial(int n, ThreadSynth& synth) {
     return answer;
 }
 ```
+## Research Question
+
+Can playing appropriate audio tones to a recursive function improve a student’s understanding of how recursion works?
+
+## Experiment
+
+For this experiment, CS 108/112 students were recruited for this project. Twenty-one students signed up for it and were randomly assigned into two groups. The first being a control group that would have no audio enhancement. The second group being the experimental group with audio enhancement. 
+
+The participants were brought into the lab at differing times and give a set of slides and instruction for each program. 5-10 minutes were spent on each program, with the students running them however they see fit. 
+
+About a week after this session, the students were sent a quiz. This quiz would be used to serve as our data for this experiment.
+
+## Results 
+
+For this experiment we used the p-value 0.05 as the value for statistical significance. In the context of this experiment, the p-value measures the likelihood that a difference in the means of the experimental and control group’s quiz scores can be attributed to anything more than random chance.
+
+We took the student’s quiz scores for each question and compared them with a two-tailed t-test to test for significance. 
+
+The results were as follows:
+![lol](https://user-images.githubusercontent.com/71472546/165418058-864393e9-0c70-4bae-92a5-e0f782f3bd82.png)
+
+Highlighted in yellow are the questions we found statistical significance 
 
 ## Report
 
-Right now, most of the code is written for the experiment, however some small adjustments need to be made. The experiment is scheduled to comence in the spring semester of 2022. We are hoping to gather a decent group of students to run a control group and a group using these auditory programs. 
+You can find the full report here:
+[CS PROJECT FINAL REPORT.pdf](https://github.com/haywortha/Hearing-Recursion/files/8568281/CS.PROJECT.FINAL.REPORT.pdf)
+
+## Resources
+
+Calvin Computer Science: https://computing.calvin.edu
+
+Final Presentation: [CS FINAL.pptx](https://github.com/haywortha/Hearing-Recursion/files/8568285/CS.FINAL.pptx)
+
