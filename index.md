@@ -72,7 +72,7 @@ Based on these results, we were able to reject the Null Hypothesis for our resea
 
 ## Report
 
-can find the full report here:
+You can find the full report here:
 [CS PROJECT FINAL REPORT.pdf](https://github.com/hearing-recursion-2022/Hearing-Recursion-cs398-2022/files/8587584/CS.PROJECT.FINAL.REPORT.pdf)
 
 ## Resources
