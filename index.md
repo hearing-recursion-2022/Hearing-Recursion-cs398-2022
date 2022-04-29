@@ -2,7 +2,7 @@
 
 ## Vision
 
-This this project, we studied the question: Can adding sound to recursive functions improve students’ understanding of recursion? What we did is make it so students can observe what a recursive function is doing by using audio. We made programs that play audio tones within recursive functions so students can tell what is happening while it is running. Recursion can be tough for certain people, so we are making it easier to understand, and to make it more interesting. 
+In this project, we studied the question: Can adding sound to recursive functions improve students’ understanding of recursion? What we did is make it so students can observe what a recursive function is doing by using audio. We made programs that play audio tones within recursive functions so students can tell what is happening while it is running. Recursion can be tough for certain people, so we are making it easier to understand, and to make it more interesting. 
 
 ## Team
 
